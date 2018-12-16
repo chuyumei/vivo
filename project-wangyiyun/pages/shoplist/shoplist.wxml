@@ -1,0 +1,19 @@
+<!--pages/shoplist/shoplist.wxml-->
+
+<view class="shop">
+  <image src="../link-01.png" wx:for="list"  wx:key="item.id" class="shop-img"/>
+    <view class="shop-info">
+      <text class="shop-title">店铺名称：{{item.title}}</text>
+      <text class="shop-tel">电话：13269523399</text>
+      <text class="shop-address">地址：万里路</text>
+      <text class="shop-time">时间：9:00-12:00</text>
+    </view>
+
+    <view class="shop-star">
+      <view class="start-after">❤❤❤❤❤</view>
+      <view class="start-before">❤❤❤❤❤</view>
+    </view>
+</view>
+
+<view class="loadmore loading" bindtap="loadMore">加载更多</view>
+

@@ -1,0 +1,38 @@
+/* pages/addcart/addcart.wxss */
+
+.cart-box image{
+    width:133rpx;
+    height:127rpx;
+}
+.cart-box .tl{
+    font-size:15px;
+}
+.cart-box .pr{
+   font-size:15px;
+   color:orange;
+}
+.cart-box .n{   
+    font-size:15px;
+}
+.cart-box .listcart{
+    display:flex;
+    border-bottom:1px dashed gray;
+    margin-bottom:20rpx;
+}
+.cart-box .del{
+    font-size:15px;
+}
+.cart-box .dec,.cart-box .inc{
+    width:20rpx;
+    height:80rpx;
+    margin:10rpx;
+    display:inline-block;
+    line-height:4;
+
+}
+.cart-box icon{
+    margin-top:46rpx;
+}
+.text1{
+    display:flex;
+}

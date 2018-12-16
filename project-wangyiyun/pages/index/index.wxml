@@ -1,0 +1,42 @@
+<!--pages/index/index.wxml-->
+<!--轮播图-->
+<view class="slide">
+  <swiper indicator-dots autoplay interval="3500">
+    <block wx:for="{{imgUrls}}" wx:key="item.id">
+      <swiper-item class="swiperimg">
+        <image src="{{item}}" mode="aspectFill" lazy-load/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!--搜索框-->
+<view class="Destination">
+  <view class="section">
+    <input  bindinput="bindReplaceInput" placeholder="输入关键字开始搜索" />
+  </view>
+</view>
+
+<!--九宫格-->
+<view class="index-nav">
+  <block wx:for="{{imgUrls2}}" wx:key="item.id">
+  <view class="nav-item">
+    <image src="{{item.img}}" mode="aspectFill" lazy-load></image>
+    <text>{{item.name}}</text>
+  </view>
+  </block>
+</view>
+
+<!--导航框-->
+<view class="my">热门目的地</view>
+<view class="navi">
+  <view class="btn-area" wx:for="{{nav1}}" wx:key="item.id">
+      <button bindtap="handleTap1"> {{item.name}}</button>
+  </view>
+</view>
+<view class="navi">
+  <view class="btn-area" wx:for="{{nav2}}" wx:key="item.id">
+      <button bindtap="handleTap6"  data-id="{{item.id}}"> {{item.name}}{{item.id}}</button>
+  </view>
+</view>
+

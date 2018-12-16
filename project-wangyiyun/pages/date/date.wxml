@@ -1,0 +1,23 @@
+<!--pages/date/date.wxml-->
+<view class="section" >  
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{objectArray}}" mode = "selector">  
+    <view class="picker">  
+      国家：{{objectArray[index]}}  
+    </view>  
+  </picker>  
+</view>  
+
+<view class="section">  
+  <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">  
+    <view class="picker">  
+     时间 : {{times}}
+    </view>  
+  </picker>  
+</view>  
+<view class="section">  
+  <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindDateChange">  
+    <view class="picker">  
+      日期: {{dates}}  
+    </view>  
+  </picker>  
+</view>  

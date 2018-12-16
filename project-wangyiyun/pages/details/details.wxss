@@ -1,0 +1,218 @@
+/* pages/details/details.wxss */
+/*商品信息*/
+.img-outer{
+  width:56%;
+  margin:0 160rpx;
+}
+.img-outer3{
+  width:56%;
+}
+.img-inner{
+  
+  height:78rpx !important;
+}
+.text2{
+  font-size:23px;
+  color:#0072E3;
+  margin:8px 16px;
+  line-height:2;
+  text-align: center;
+  font-weight:bold;
+}
+.color{
+  font-size:15px;
+}
+.navi{
+  display: flex;
+  margin:30rpx 20rpx;
+  font-size:12px;
+}
+
+
+page{ 
+ display: flex; 
+ flex-direction: column; 
+ height: 100%; 
+} 
+.navbar{ 
+ flex: none; 
+ display: flex; 
+ background: #fff; 
+} 
+.navbar .item{ 
+ position: relative; 
+ flex: auto; 
+ text-align: center; 
+ line-height: 80rpx; 
+} 
+.navbar .item.active{ 
+ color: #FFCC00; 
+} 
+.navbar .item.active:after{ 
+ content: ""; 
+ display: block; 
+ position: absolute; 
+ bottom: 0; 
+ left: 0; 
+ right: 0; 
+ height: 4rpx; 
+ background: #FFCC00; 
+} 
+
+
+/* 加入购物车弹框 */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+.s{
+  color:gray;
+  font-size:18px;
+}
+.navbar .item.active {
+  color:lightblue;
+  font-weight:600
+}
+
+/*对话框 */
+.commodity_attr_box {
+  height: 300rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+}
+
+.addbtncart{
+  background:#C0C0C0;
+  font-weight:600;
+}
+/* 加减按钮*/
+page {
+padding: 20px 0;
+}
+/*主容器*/
+.stepper {
+width:80px;
+height:26px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+/*加号和减号*/
+.stepper text {
+float: left;
+width: 19px;
+line-height: 26px;
+text-align: center;
+}
+/*数值*/
+.stepper input {
+width: 40px;
+height: 26px;
+float: left;
+margin: 0 auto;
+text-align: center;
+font-size: 12px;
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+}
+/*普通样式*/
+.stepper .normal {
+color:black;
+}
+/*禁用样式*/
+.stepper .disable {
+color: #ccc;
+}
+
+.addCart .commodity_attr_box{
+  height:600rpx !important;
+}
+.addCart image{
+  width:200rpx;
+  height:216rpx;
+  margin-left:9rpx;
+}
+.outer_cart{
+  display:flex;
+  border-bottom:1rpx dashed gray;
+
+}
+.cart_text{
+  margin-top:9rpx;
+}
+.outer-img{
+  display:flex;
+}
+.outer-img image{
+  width:79rpx;
+  margin-top:9rpx;
+}
+.scolored{
+  line-height:1;
+  margin-top:69rpx;
+  font-size:15px;
+}
+.scolor{
+  line-height:76px;
+  font-size:15px;
+}
+.img-view{
+  border:1rpx solid gray;
+  margin-right:16rpx;
+  width:91rpx;
+  height:93rpx;
+}
+.pro{
+  font-size:14px;
+  text-align:center;
+}
+.year{
+  height:51rpx;
+  width:617rpx;
+  border:1rpx solid grey;
+  font-size:12px;
+  line-height:46rpx;
+  margin-top:9rpx;
+  padding-left:11rpx;
+}
+.ins-title{
+  font-size:15px;
+}
+
+/*延保隐藏部分*/
+.hide{
+ display: none;
+}
+.show{ 
+ display: block;
+}
+.hideshow{
+  width:87rpx;
+  font-size:10px;
+  margin-top:-34rpx;
+  border:0 !important;
+  height:40rpx;
+}
+.insurance .text{
+  width:624rpx;
+  color:#fff;
+  display:inline-block;
+  font-size:12px;
+  text-align:center;
+  z-index:16;
+  background-color:gray;
+  margin-left:-6rpx;
+}

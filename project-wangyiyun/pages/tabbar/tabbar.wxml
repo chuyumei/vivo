@@ -1,0 +1,23 @@
+<!--pages/tabbar/tabbar.wxml-->
+
+<!--导航框-->
+<view class="navi">
+  <view class="btn-area" wx:for="{{nav1}}" wx:key="item.id">
+      <button bindtap="getAjax"  data-id="{{item.id}}"> {{item.name}}</button>      
+  </view>
+</view>
+
+<view class="nav-text">
+  <image src="{{nav_res.img1}}" mode="aspectFill" lazy-load class="navimg"></image>
+  <view class="font13">{{nav_res.title}}</view>
+</view>
+
+
+<view >
+  <button  class="hide{{showView?'show':''}}" bindtap="onChangeShowState">{{showView?'隐藏':'显示'}}</button>
+  
+  <button class="hide{{showView?'':'show'}}" bindtap="onChangeShowState">{{showView?'隐藏':'显示'}}</button>
+ </view>
+ <view class="hide{{showView?'show':''}}">
+ <text class="text">我是被显示被隐藏控件</text>
+ </view>

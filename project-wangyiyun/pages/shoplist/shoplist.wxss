@@ -1,0 +1,51 @@
+/* pages/shoplist/shoplist.wxss */
+page{
+  background-color:lavender; 
+}
+.shop{
+    padding:20rpx;
+    border:1rpx solid #ddd;
+    display: flex;
+    /* position:relative; */
+  }
+/*2:商品项目*/
+/*2:商品图片*/
+.shop-img{
+  width:98rpx;
+  height:160rpx;
+  margin-right:20rpx;
+}
+/*2:商品信息*/
+/*2:打分*/
+
+.shop-info{
+  width:400rpx;
+  display: flex;
+  flex-direction: column;
+  color:#666;
+  line-height: 1.5;
+  font-size:16px;
+}
+.shop-title{
+    font-size:16px;
+    color:#333;
+    width:380rpx;
+  }
+  .shop-star{
+     position:relative;
+      right:20rpx;
+      top:20rpx;
+    }
+    .start-after{
+      color:#e2e2e2e2;
+      top:0;
+      left:0;
+    }
+    .start-before{
+      color:lightseagreen;
+      position:absolute;
+      top:0;
+      left:0;
+      /* width:75%; */
+      overflow:hidden;
+    }

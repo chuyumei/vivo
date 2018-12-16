@@ -1,0 +1,10 @@
+/* pages/date/date.wxss */
+.section{
+   background:#CABBC7;
+   margin:20rpx;
+   padding:20rpx;
+   font-size:18px;
+   border-radius:26rpx;
+   padding-left:26rpx;
+
+}

@@ -1,0 +1,16 @@
+<!--pages/tabbar2/tabbar2.wxml-->
+<view class="outer">
+  <view wx:for="{{list1}}" wx:key="item.id" class="desc">
+    <view>
+      <image src="{{item.img1}}" mode="aspectFill" lazy-load class="phoneimg" bindtap="jumpdetails" data-id="{{item.id}}"></image>
+      <view class="text">
+        <view class="font13 ell">
+          <text>{{item.title}}</text>
+        </view>
+        <view class="font13">
+          <text>{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

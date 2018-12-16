@@ -1,0 +1,25 @@
+/* pages/tabbar3/tabbar3.wxss */
+/* pages/tabbar2/tabbar2.wxss */
+.desc{
+  width:46%;
+  margin-top:18rpx;
+
+}
+.desc:nth-child(n){
+  margin-right:-6rpx;
+  margin-left: 24rpx;
+}
+.phoneimg{
+  width:100%;
+  height:200rpx;
+}
+.text{
+  width:346rpx;
+}
+.outer{
+  display:flex;
+  flex-wrap:wrap;
+}
+.navi .btn-area{
+  margin-top:29rpx;
+}

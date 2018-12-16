@@ -1,0 +1,78 @@
+  <!--标头--> 
+<view>
+  <view>
+    <image src="{{list[0].img1}}" mode="aspectFill" lazy-load class="img-outer"></image>
+  </view>
+  <view class="title">{{list[0].title}}</view>
+  <view class="price">￥{{list[0].price}}</view>
+  <view class="color">已选颜色：{{list[0].pro}}</view>
+</view>
+
+<!--加入购物车--> 
+<view class="addCart">
+  <button bindtap="clickme" class="addbtncart">加入购物车</button> 
+  <!--屏幕背景变暗的背景  -->
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!--弹出框  -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <view class="outer_cart">
+      <image src="{{list3[0].img1}}" mode="aspectFill" lazy-load class="img-outer3"></image>
+      <view class="cart_text">
+        <view class="scolored">已选颜色：{{list[0].pro}}</view>
+        <view class="price">￥{{list[0].price}}</view>
+      </view>  
+    </view>
+    <!--规格  -->
+    <view class="outer-img">
+      <view class="scolor">选择颜色</view>
+      <view wx:for="{{list2}}" wx:key="item.id" class="img-view">
+        <image src="{{item.img1}}" mode="aspectFill" lazy-load class="img-inner" bindtap="handdlespecs"  data-id="{{item.id}}"></image>
+        <view class="pro">{{item.color}}</view>
+      </view>
+    </view>
+    <!--延保  -->
+    <view class="insurance">
+      <view class="ins-title">延长保险服务(可选项)</view>
+      <view class="year">半年延保￥69
+        <button  class="hide{{showView?'show':''}}" bindtap="onChangeShowState">{{showView?'^':'^'}}</button>
+        <button class="hide{{showView?'':'show'}}" bindtap="onChangeShowState">{{showView?'^':'^'}}</button>
+        <view class="hide{{showView?'show':''}}">
+          <text class="text">viov延保服务针对主机（包含不可拆卸一体机电池），不包含耳机、充电器、数据线、可拆卸电池等附件或单独购买或赠送的配件产品</text>
+        </view>
+      </view>
+      <view class="year">一年延保￥109</view>
+    </view>
+    <view class='stepper sum'>
+        <view class="color">数量</view>
+        <text class='{{minusStatus}}' type='number' bindtap='bindMinus' data-id="{{item.id}}">-</text>
+        <input bindinput='bindManual' value='{{num}}'></input>
+        <text bindtap='bindPlus'>+</text>
+    </view>
+  </view>
+</view> 
+
+<!--导航条--> 
+<view class="navbar"> 
+ <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}  s" wx:key="unique" bindtap="navbarTap">{{item}}</text> 
+</view> 
+ 
+<!--首页--> 
+<view hidden="{{currentTab!==0}}"> 
+   <view>
+    <image src="{{list[0].img2}}" mode="aspectFill" lazy-load class="img-outer"></image>
+  </view>
+</view> 
+ 
+<!--搜索--> 
+<view hidden="{{currentTab!==1}}"> 
+  <view class="title">{{list[0].a}}</view>
+  <view class="price">{{list[0].b}}</view>
+   <view class="title">{{list[0].c}}</view>
+  <view class="price">{{list[0].d}}</view>
+  <view class="title">{{list[0].e}}</view>
+  <view class="price">{{list[0].f}}</view>
+   <view class="title">{{list[0].g}}</view>
+  <view class="price">{{list[0].h}}</view>
+</view> 
+
+ 

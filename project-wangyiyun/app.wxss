@@ -1,0 +1,56 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+
+/*通用的单行超出范围，截取并添加省略号*/
+.ell{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;    /*超出部分添加。。。*/
+}
+
+/*tabbar*/
+.btn-area{
+  border:1rpx solid gray;
+  width:162rpx;
+  border-radius:12rpx;
+  margin-right:16rpx;
+
+}
+.btn-area button{
+  font-size:13px;
+}
+
+
+.font13{
+  font-size: 16px;
+  color: goldenrod
+}
+
+.title{
+  font-size:16px;
+  color:#272727;
+  margin:8px 16px;
+  line-height:1.6;
+}
+.price{
+  font-size:18px;
+  color:orangered;
+  margin:8px 16px;
+}
+.text{
+  font-size:15px;
+  color:gray;
+  margin:8px 16px;
+  line-height:2;
+
+}

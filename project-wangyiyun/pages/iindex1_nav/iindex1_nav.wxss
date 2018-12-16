@@ -1,0 +1,7 @@
+/* pages/iindex1_nav/iindex1_nav.wxss */
+
+image{
+  width:250rpx;
+  height:150rpx;
+  margin-bottom: 10rpx;
+}

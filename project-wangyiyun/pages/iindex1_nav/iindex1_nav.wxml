@@ -1,0 +1,21 @@
+<!--pages/iindex1_nav/iindex1_nav.wxml-->
+接受到参数{{id}}
+
+<button bindtap="getajax">点击加载信息</button>
+
+
+{{msglist.id}}
+
+
+
+<view wx:for="{{msglist}}" wx:key="item.id">
+  <view>
+    <image src="{{item.img1}}" mode="aspectFill" lazy-load></image>
+    <view>
+      <text>{{item.title}}</text>
+    </view>
+    <view>
+      <text>{{item.price}}</text>
+    </view>
+  </view>
+</view>
